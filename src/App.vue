@@ -27,15 +27,15 @@
 
 <script>
 export default {
-  name: 'App'
-}
+  name: "App"
+};
 </script>
 
 <style>
-  .app-container{
-    overflow: hidden;
-     height: 100vh;
-    padding-top:40px;
-    padding-bottom: 50px
-  }
+.app-container {
+	height:100%;
+  overflow: hidden;	
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
 </style>

@@ -4,6 +4,8 @@ import Home from '@/components/home'
 import Member from '@/components/member'
 import Search from '@/components/search'
 import Shopcar from '@/components/shopcar'
+import Newslist from '@/components/news/newslist.vue'
+import Newsinfo from '@/components/news/newsinfo.vue'
 
 Vue.use(Router)
 
@@ -27,6 +29,14 @@ export default new Router({
     {
       path: '/',
       redirect: '/home'
+    },
+    {
+      path: '/home/newslist',
+      component: Newslist
+    },
+    {
+      path: '/home/newsinfo/:id',
+      component: Newsinfo
     }
   ]
 })

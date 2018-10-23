@@ -22,13 +22,21 @@ import VueResource from 'vue-resource'
 
 Vue.use(VueResource)
 
+//导入时间组件
+import moment from 'moment'
+Vue.filter('dateformat', function (dataStr, pattern = "YYYY-MM-DD HH:mm:ss") {
+  return moment(dataStr).format(pattern)
+})
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
- 
+
   router,
-  components: { App },
+  components: {
+    App
+  },
   template: '<App/>'
 })
