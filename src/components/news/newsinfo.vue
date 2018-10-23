@@ -9,12 +9,12 @@
     <hr>
 
     <div class="content" v-html="newsinfo.content"></div>
-    <!-- <comment-box :id="this.id"></comment-box> -->
+    <comment-box :id="this.id"></comment-box>
     </div>
 </template>
 
 <script>
-// import comment from "../subcomponents/comment.vue";
+import comment from "../subcomponents/comment.vue";
 export default {
   data() {
     return {
@@ -36,10 +36,10 @@ export default {
           }
         });
     }
-  }
-  //   components:{
-  //       "comment-box": comment
-  //   }
+  },
+    components:{
+        "comment-box": comment
+    }
 };
 </script>
 
@@ -59,6 +59,7 @@ export default {
     justify-content: space-between;
   }
   .content {
+      padding-left: 2px;
     img {
       width: 100%;
     }

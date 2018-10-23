@@ -33,7 +33,7 @@
                 this.$http.get('http://027xin.com:8899/api/getnewslist').then( res => {
                     if(res.body.status === 0) {
                         this.newslist = res.body.message
-                        console.log(this.newslist);
+                        // console.log(this.newslist);
                     }
                 })
             }

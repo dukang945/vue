@@ -21,6 +21,10 @@ import '../src/assets/lib/mui/css/icons-extra.css'
 import VueResource from 'vue-resource'
 
 Vue.use(VueResource)
+//设置跟路径
+Vue.http.options.root = "http://027xin.com:8899"
+//配置post请求第二个参数
+Vue.http.options.emulateJSON = true
 
 //导入时间组件
 import moment from 'moment'

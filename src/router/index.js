@@ -6,8 +6,10 @@ import Search from '@/components/search'
 import Shopcar from '@/components/shopcar'
 import Newslist from '@/components/news/newslist.vue'
 import Newsinfo from '@/components/news/newsinfo.vue'
+import Photosinfo from '@/components/photos/photosinfo.vue'
 
 Vue.use(Router)
+
 
 export default new Router({
   routes: [{
@@ -37,6 +39,10 @@ export default new Router({
     {
       path: '/home/newsinfo/:id',
       component: Newsinfo
+    },
+    {
+      path: '/home/photosinfo',
+      component: Photosinfo
     }
   ]
 })
